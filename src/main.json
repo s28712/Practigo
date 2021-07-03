@@ -1,0 +1,18 @@
+{
+  "total": 1,
+  "concepts": [
+    {
+      "concept": "variables",
+      "total": 2,
+      "problems": [
+        {
+          "solution": "Hello World"
+        },
+
+        {
+          "solution": "Hello World"
+        }
+      ]
+    }
+  ]
+}
