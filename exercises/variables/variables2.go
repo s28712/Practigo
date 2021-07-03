@@ -4,7 +4,7 @@ package main
 
 import "fmt"
 
-func Variable2() {
+func main() {
 	// Print out Hello World to console
 	fmt.Println("Hello World")
 }
