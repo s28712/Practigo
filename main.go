@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"io/ioutil"
 	"strings"
 )
@@ -38,6 +39,8 @@ func checkSolution() {
 			}
 		}
 	}
+
+	fmt.Println(GREEN, "Congrats! You finished Practigo!")
 }
 
 func main() {

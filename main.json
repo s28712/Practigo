@@ -1,0 +1,134 @@
+{
+  "total": 1,
+  "concepts": [
+    {
+      "concept": "variables",
+      "total": 5,
+      "problems": [
+        {
+          "solution": "Hello World\n"
+        },
+
+        {
+          "solution": "3\n"
+        },
+
+        {
+          "solution": "Correct\n"
+        },
+        
+        {
+          "solution": "2\n"
+        },
+
+        {
+          "solution": "true\n"
+        }
+      ]
+    },
+
+    {
+      "concept": "conditionals",
+      "total": 3,
+      "problems": [
+        {
+          "solution": "Correct\n"
+        },
+
+        {
+          "solution": "Correct\n"
+        },
+
+        {
+          "solution": "Correct\n"
+        }
+      ]
+    },
+
+    {
+      "concept": "loops",
+      "total": 2,
+      "problems": [
+        {
+          "solution": "0\n1\n2\n3\n4\n"
+        },
+
+        {
+          "solution": "1\n2\nfizz\n4\nbuzz\nfizz\n7\n8\n9\nbuzz\n11\nfizz\n13\n14\nfizzbuzz\n"
+        }
+      ]
+    },
+
+    {
+      "concept": "functions",
+      "total": 4,
+      "problems": [
+        {
+          "solution": "5\n"
+        },
+
+        {
+          "solution": "Hello Functions\n"
+        },
+
+        {
+          "solution": "9\n"
+        },
+
+        {
+          "solution": "7\n"
+        }
+      ]
+    },
+
+    {
+      "concept": "collections",
+      "total": 3,
+      "problems": [
+        {
+          "solution": "4\n"
+        },
+
+        {
+          "solution": "5\n"
+        },
+
+        {
+          "solution": "9\n"
+        },
+
+        {
+          "solution": "4\n"
+        }
+      ]
+    },
+
+    {
+      "concept": "structs",
+      "total": 2,
+      "problems": [
+        {
+          "solution": "Gopher\n12\n"
+        },
+
+        {
+          "solution": "12\n"
+        }
+      ]
+    },
+
+    {
+      "concept": "pointers",
+      "total": 2,
+      "problems": [
+        {
+          "solution": "2\n"
+        },
+
+        {
+          "solution": "2\n"
+        }
+      ]
+    }
+  ]
+}

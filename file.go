@@ -8,7 +8,7 @@ import (
 func ReadFile(concept string, problem int) string {
 	problemInt := strconv.Itoa(problem)
 
-	dir := "../exercises/" + concept + "/" + concept + problemInt + ".go"
+	dir := "exercises/" + concept + "/" + problemInt + ".go"
 	rawCurr, err := ioutil.ReadFile(dir)
 
 	if err != nil {

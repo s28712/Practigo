@@ -5,6 +5,7 @@ package main
 import "fmt"
 
 func main() {
-	// Print out Hello World to console
-	fmt.Println("Hello World!")
+	// Make variable a equal 3
+	var a int = 2
+	fmt.Println(a)
 }
