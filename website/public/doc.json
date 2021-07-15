@@ -22,7 +22,7 @@
     {
       "mainTitle": "Running the Application",
       "id": "running",
-      "text": "<p>In the exercises directory there are numerable amount of example problems to run through. Start by going to the variables directory and solving the first problem, 1.go\n\nOnce you finish the exercise, either run 'go run main.go' in the app directory, or run 'run.sh' in the app directory.\n\nThat's it. Once you complete the first exercise, run through the rest until you complete all of them. Good luck!</p>"
+      "text": "<p>In the exercises directory there are numerable amount of example problems to run through. Start by going to the variables directory and solving the first problem, 1.go\n\nOnce you finish the exercise, either run 'go run *.go' in the app directory, or run 'run.sh' in the app directory.\n\nThat's it. Once you complete the first exercise, run through the rest until you complete all of them. Good luck!</p>"
     },
 
     {

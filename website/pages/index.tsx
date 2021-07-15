@@ -83,7 +83,7 @@ const TeachingSVG : FC = () => {
 
 const Features: FC = () => {
   return (
-    <Box bg={'gray.800'} position={'relative'} h="100vh" px="15">
+    <Box bg={'gray.800'} position={'relative'} h="full" px="15">
       <Flex
         flex={1}
         zIndex={0}
