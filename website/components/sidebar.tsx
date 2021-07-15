@@ -24,6 +24,8 @@ import {
 } from 'react-icons/fi';
 import { IconType } from 'react-icons';
 import { ReactText } from 'react';
+import json from '../public/doc.json'
+
 
 interface LogoProps {
   mobile: boolean
@@ -32,18 +34,17 @@ interface LogoProps {
 const Logo: FC<LogoProps> = ({ mobile }) => {
   return (
     <>
-      <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold" ml={ mobile ? "4" : "-4" }>Practigo</Text>
+      <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold" ml={ mobile ? "4" : "-4" }><a href="/">Practigo</a></Text>
     </>
   )
 
 }
 
 interface SidebarProps extends BoxProps {
-  LinkItems: any
   onClose: () => void;
 }
 
-const SidebarContent: FC<SidebarProps> = ({ onClose, LinkItems, ...rest }) => {
+const SidebarContent: FC<SidebarProps> = ({ onClose, ...rest }) => {
   return (
     <Box
       bg={useColorModeValue('white', 'gray.900')}
@@ -57,8 +58,8 @@ const SidebarContent: FC<SidebarProps> = ({ onClose, LinkItems, ...rest }) => {
         <Logo mobile={false} />
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>
-      {LinkItems.map((link) => (
-        <p>{ link.name }</p>
+      {json.doc.map((link, idx) => (
+        <Text ml="5" mb="4" pt="-2" textColor="gray.600" key={idx} onClick={onClose}><a href={"#"+link.id}>{ link.mainTitle }</a></Text>
       ))}
     </Box>
   );

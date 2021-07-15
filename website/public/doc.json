@@ -1,0 +1,34 @@
+{
+  "doc": 
+  [
+    {
+      "mainTitle": "Mission",
+      "id": "mission",
+      "text": "<p>The Go programming language, also known as Golang, has been taking the coding world by storm. More and more companies, projects, and people are adopting it everyday, and it has recieved an overwhelming amount of positivity. With its simplistic syntax combined with the numerous amount of application make it an easy choice for many people. \n\nBecause of this, people should be able to learn this language in ways they would enjoy it. This project aims at teaching people the basics of Go syntax in an example oriented way. If you already know a programming language or languages, this should be perfect with you. Using the example problems and auto checker, learning Go has never been easier.</p>"
+    },
+
+    {
+      "mainTitle": "Installing Go",
+      "id": "installation",
+      "text": "<p>1. Go to the Go website <a href=\"https://golang.com\" target=\"_blank\" class=\"link\">https://golang.com</a>\n2. Download and run installer for respective operating system\n3. Verify the installation was successful by opening a terminal on Mac/Linux or Command Prompt on Windows\n <pre>Type 'go version' without the quotes</pre></p>"
+    },
+
+    {
+      "mainTitle": "Downloading Practigo",
+      "id": "setup",
+      "text": "<p>1. Visit <a class=\"link\" target=\"_blank\" href=\"https://github.com/simar-singh/Practigo\">https://github.com/simar-singh/Practigo</a>\n2. Either download from the website or use the command \n\n<pre>\tgit clone https://github.com/simar-singh/Practigo.git</pre>\n3. Open the directory labeled 'app' in your favorite ide\n4. Run the run.sh file to ensure everything works</p>"
+    },
+
+    {
+      "mainTitle": "Running the Application",
+      "id": "running",
+      "text": "<p>In the exercises directory there are numerable amount of example problems to run through. Start by going to the variables directory and solving the first problem, 1.go\n\nOnce you finish the exercise, either run 'go run main.go' in the app directory, or run 'run.sh' in the app directory.\n\nThat's it. Once you complete the first exercise, run through the rest until you complete all of them. Good luck!</p>"
+    },
+
+    {
+      "mainTitle": "Other Resources",
+      "id": "other",
+      "text": "<p>Everyone learns differently. Here are some other resources to help you during your Go programming journey.\n\n1. The main Go site <a href=\"https://golang.com\" target=\"_blank\" class=\"link\">https://golang.com</a>\n2. Go In Action book <a target=\"_blank\" href=\"https://www.amazon.com/Go-Action-William-Kennedy/dp/1617291781\" class=\"link\">here</a>\n3. Free Code Camp course <a href=\"https://www.youtube.com/watch?v=YS4e4q9oBaU\" target=\"_blank\" class=\"link\">here</a></p>"
+    }
+  ]
+}

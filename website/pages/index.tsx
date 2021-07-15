@@ -34,7 +34,9 @@ const Landing: FC<LandingProps> = ({ featureRef }) => {
       textAlign={'center'}
       align={'center'}
       spacing={{ base: 8, md: 10 }}
-      py={{ base: 10, md: 12 }}>
+      py={{ base: 10, md: 12 }}
+      h="100vh"
+    >
       <Heading
         fontWeight={600}
         fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
@@ -81,12 +83,11 @@ const TeachingSVG : FC = () => {
 
 const Features: FC = () => {
   return (
-    <Box bg={'gray.800'} position={'relative'} px="15" py="12">
+    <Box bg={'gray.800'} position={'relative'} h="100vh" px="15">
       <Flex
         flex={1}
         zIndex={0}
         display={{ base: 'none', lg: 'flex' }}
-        backgroundImage="url('/templates/stats-grid-with-image.png')"
         backgroundSize={'cover'}
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
@@ -106,7 +107,7 @@ const Features: FC = () => {
             flex={1}
             color={'gray.400'}
             justify={{ lg: 'center' }}
-            py={{ base: 4, md: 20, xl: 60 }}>
+            py={{ base: 4, md: 20, xl: 20 }}>
             <Box mb={{ base: 8, md: 20 }}>
               <Heading
                 color={'white'}

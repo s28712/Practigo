@@ -1,0 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
+pre {
+  tab-size: 2;
+}
+
+.link {
+  color:  blue;
+  text-decoration: underline;
+}

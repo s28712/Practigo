@@ -10,15 +10,13 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import SidebarContent, { MobileNav } from '../components/sidebar'
+import json from '../public/doc.json'
 
 interface LinkItemProps {
   name: string;
   category: string;
+  id: string
 }
-
-const LinkItems: Array<LinkItemProps> = [
-  { name: "", category: "" }
-];
 
 interface TitleProps {
   text: string
@@ -27,22 +25,35 @@ interface TitleProps {
 const Title: FC<TitleProps> = ({ text }) => {
   return (
     <>
-      <Text ml="2" fontSize="3xl" textColor="gray.500">{ text }</Text>
+      <Text ml="2" fontSize="3xl" textColor="gray.500" shadow="sm">{ text }</Text>
       <hr style={{ borderWidth: '2px' }} />
     </>
+  );
+}
+
+const Section: FC = () => {
+  return (
+    <>
+      { json.doc.map((cat, idx) => {
+          return (
+            <div key={idx} id={cat.id}>
+              <Title text={cat.mainTitle} />
+              <Box w="full" h="full" pr="10" ml="2" my="2" mb="16">
+                <Text pr="5" style={{ whiteSpace: 'pre-wrap' }} dangerouslySetInnerHTML={{__html: cat.text}}></Text>
+              </Box>
+            </div>
+          );
+      }) }
+    </>    
   );
 }
 
 const Documentation: FC = () => {
   return (
     <Box w="full" h="full">
-      <Heading fontSize="5xl">The Practigo Documentation</Heading>
+      <Heading fontSize="5xl" textShadow="-1.5px 1.5px #999">The Practigo Documentation</Heading>
       <Box w="full" h="5vh"></Box>
-      <Title text="Mission" />
-      <Title text="Installing Go" />
-      <Title text="Downloading Practigo" />
-      <Title text="Running the Application" />
-      <Title text="Other Resources" />
+      <Section />
     </Box>
   );
 }
@@ -53,7 +64,6 @@ const SetupPage: NextPage = () => {
     <Box minH="100vh" w="full" bg={useColorModeValue('gray.100', 'gray.900')}>
       <SidebarContent
         onClose={() => onClose}
-        LinkItems={LinkItems}
         display={{ base: 'none', md: 'block' }}
       />
       <Drawer
@@ -65,7 +75,7 @@ const SetupPage: NextPage = () => {
         onOverlayClick={onClose}
         size="full">
         <DrawerContent>
-          <SidebarContent onClose={onClose} LinkItems={LinkItems} />
+          <SidebarContent onClose={onClose} />
         </DrawerContent>
       </Drawer>
 
